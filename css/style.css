@@ -1,5 +1,5 @@
 /* - - - font import - - - */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 /* - - - browser resets - - - */
 * {
@@ -117,7 +117,7 @@ h1, h2, h3, P {
 
 /* - - - what we do section styling - - - */
  #what-we-do {
-    padding: 5% 10%;
+    padding: 10%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -155,6 +155,10 @@ h1, h2, h3, P {
     /* display: none; */
 }
 
+#what-we-do .s-container .service .default img {
+    width: 20%;
+}
+
 #what-we-do .s-container .service .default h3 {
     font-size: 1.1vw;
     margin-top: 5%;
@@ -178,3 +182,67 @@ h1, h2, h3, P {
     letter-spacing: 0.05vw;
     font-weight: 500;
 }
+
+/* - - - portfolio section styling - - - */
+#portfolio {
+    padding: 5% 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#portfolio h3 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    letter-spacing: 0.3vw;
+}
+
+#portfolio .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#portfolio .items .item {
+    width: 23%;
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #00000096; */
+}
+
+#portfolio .items .item img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#portfolio .items .item .text-box {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: #fff 0.3vw solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5%;
+    text-align: left;
+    /* background-color: #0000006c; */
+    display: none;
+}
+
+#portfolio .items .item .text-box p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+
