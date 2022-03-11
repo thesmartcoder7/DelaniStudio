@@ -40,6 +40,7 @@
     text-transform: uppercase;
     font-size: 1vw;
     margin-bottom: 10%;
+    letter-spacing: 0.07vw;
 }
 @keyframes bounce {
     0% {
@@ -47,7 +48,7 @@
     }
 
     50% {
-        margin-top: -1%;
+        margin-top: -0.5%;
     }
 
     100% {
@@ -59,3 +60,38 @@
     width: 2vw;
     animation: bounce 1s infinite;
 }
+
+/* - - - about section syling - - - */
+#about {
+    padding: 5% 20%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#about h3 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+#about p {
+    font-size: 1vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.05vw;
+}
+
+/* - - - services section styling - - -
+#services {
+    padding: 10% 20%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/backgrounds/s_image.jpg");
+}
+
+#services h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font
+} */
