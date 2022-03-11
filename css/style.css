@@ -116,7 +116,7 @@ h1, h2, h3, P {
 }
 
 /* - - - what we do section styling - - - */
-#what-we-do {
+ #what-we-do {
     padding: 5% 10%;
     text-align: center;
     display: flex;
@@ -151,6 +151,8 @@ h1, h2, h3, P {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    /* display: none; */
 }
 
 #what-we-do .s-container .service .default h3 {
@@ -165,9 +167,14 @@ h1, h2, h3, P {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     display: none;
 }
 
-
-
+#what-we-do .s-container .service .description p {
+    margin-top: -10%;
+    font-size: 1vw;
+    line-height: 1.7vw;
+    letter-spacing: 0.05vw;
+    font-weight: 500;
+}
