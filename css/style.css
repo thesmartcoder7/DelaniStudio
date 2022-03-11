@@ -245,4 +245,86 @@ h1, h2, h3, P {
     font-size: 1.5vw;
 }
 
+/* - - - contact us section styling - - - */
+#contact {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("../assets/backgrounds/c_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
 
+#contact h3 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    letter-spacing: 0.3vw;
+    color: #fff;
+}
+
+#contact form {
+    width: 70%;
+}
+
+#contact form .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact form .info input {
+    padding: 2%;
+    width: 48%;
+    outline: none;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.9vw;
+    margin: 5% 0;
+}
+
+#contact form .info input::placeholder {
+    color: #fff;
+}
+
+#contact form textarea {
+    width: 100%;
+    height: 15vw;
+    padding: 2%;
+    background-color: transparent;
+    outline: none;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.9vw;
+}
+
+#contact form textarea::placeholder {
+    color: #fff;
+}
+
+#contact form input[type=submit] {
+    padding: 1.5% 5%;
+    outline: none;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#contact form input[type=submit]:hover {
+    background-color: #fff;
+    color: #3c3c3c;
+}
