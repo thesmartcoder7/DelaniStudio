@@ -1,8 +1,8 @@
-/* - - - footer current year - - -*/
+/* - - - footer current year - - - */
 let timeline = new Date
 $(".current-year").text(timeline.getFullYear())
 
-/* - - - what we do onclick section - - -*/
+/* - - - what we do onclick section - - - */
 $(".default").click((e)=> {
     let siblingClassName = e.currentTarget.className.split(" ")[1]
     if(siblingClassName === "a"){
