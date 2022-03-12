@@ -296,6 +296,7 @@ h1, h2, h3, P {
 
 #contact form {
     width: 70%;
+    animation-delay: 0.5s;
     animation: appear 0.5s;
 }
 
@@ -368,6 +369,7 @@ h1, h2, h3, P {
     margin-top: 5%;
     cursor: pointer;
     backdrop-filter: blur(0.2vw);
+    animation-delay: 0.5s;
     animation: appear 0.5s;
     display: none;
 }

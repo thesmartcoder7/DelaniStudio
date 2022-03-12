@@ -103,7 +103,7 @@ function validate(user, email, message){
 }
 
 // submission function
-let form = document.querySelector("#form")
+let form = document.querySelector("#mc-embedded-subscribe-form")
 let userName = document.querySelector("#name")
 let userEmail = document.querySelector("#email")
 let message = document.querySelector("#message")
