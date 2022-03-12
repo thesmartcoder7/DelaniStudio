@@ -260,6 +260,7 @@ h1, h2, h3, P {
 }
 
 #portfolio .items .item .text-box p {
+    text-align: left;
     color: #fff;
     text-transform: uppercase;
     font-weight: 800;
@@ -267,7 +268,7 @@ h1, h2, h3, P {
     padding: 10%;
     height: 90%;
     width: 90%;
-    border: solid 0.2vw #fff;
+    border: solid 0.3vw #fff;
 }
 
 /* - - - contact us section styling - - - */
@@ -295,6 +296,7 @@ h1, h2, h3, P {
 
 #contact form {
     width: 70%;
+    animation: appear 0.5s;
 }
 
 #contact form .info {
@@ -366,6 +368,7 @@ h1, h2, h3, P {
     margin-top: 5%;
     cursor: pointer;
     backdrop-filter: blur(0.2vw);
+    animation: appear 0.5s;
     display: none;
 }
 

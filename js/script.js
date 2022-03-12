@@ -90,39 +90,36 @@ for(i=0; i<image.length; i++){
 function validate(user, email, message){
     let emailRegex = /^[a-z\S\d]+@[a-z\d\S]+.[\Sa-z\d]$/
     if(user.value === ""){
-        return "You have to fill in your name"
-    }
-    if (email.value === ""){
+        return ("You have to fill in your name")
+    } else if (email.value === ""){
         return "You must fill in your email"
-    }
-    if (message.value === ""){
+    } else if (message.value === ""){
         return "Please include a message"
-    }
-    if(emailRegex.test(email.value) === false) {
+    } else if(emailRegex.test(email.value) === false) {
         return "Please include a valid email"
-    } 
+    } else {
+        return ""
+    }
 }
 
 // submission function
-let form = document.querySelector('#form')
-let userName = document.querySelector('#name')
+let form = document.querySelector("#form")
+let userName = document.querySelector("#name")
 let userEmail = document.querySelector("#email")
 let message = document.querySelector("#message")
-let popUp = document.querySelector('.successful')
+let popUp = document.querySelector(".successful")
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
-    if(validate(userName, userEmail, message) === ""){
+    if(validate(userName, userEmail, message) !== ""){
         alert(validate(userName, userEmail, message))
     } else {
         console.log(userEmail.value, userName.value, message.value)
     }
-    form.style.display="none"
-    popUp.style.display="block"
+    // form.style.display="none"
+    // popUp.style.display="block"
 })
 
 popUp.addEventListener("click", ()=> {
     popUp.style.display="none"
     form.style.display="block"
 })
-
-
