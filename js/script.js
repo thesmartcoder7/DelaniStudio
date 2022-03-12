@@ -103,23 +103,22 @@ function validate(user, email, message){
 }
 
 // submission function
-let form = document.querySelector("#form")
-let userName = document.querySelector("#name")
-let userEmail = document.querySelector("#email")
-let message = document.querySelector("#message")
-let popUp = document.querySelector(".successful")
-form.addEventListener("submit", (e)=>{
+let form = $("#form")
+let userName = $("#name")
+let userEmail = $("#email")
+let message = $("#message")
+form.submit((e)=>{
     e.preventDefault()
     if(validate(userName, userEmail, message) !== ""){
         alert(validate(userName, userEmail, message))
     } else {
         console.log(userEmail.value, userName.value, message.value)
+        form.style.display="none"
+        $(".successful").style.display="block"
     }
-    // form.style.display="none"
-    // popUp.style.display="block"
 })
 
-popUp.addEventListener("click", ()=> {
+$(".successful").click(()=> {
     popUp.style.display="none"
     form.style.display="block"
 })
