@@ -109,9 +109,10 @@ let userEmail = document.querySelector("#email")
 let message = document.querySelector("#message")
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
-    if(validate(userName, userEmail, message) !== ""){
-        alert(validate(userName, userEmail, message))
-    } else {
+    // if(validate(userName, userEmail, message) !== ""){
+    //     alert(validate(userName, userEmail, message))
+    // } else {
+    if(true){
         console.log(userEmail.value, userName.value, message.value)
         form.style.display="none"
         $(".successful").css("display", "block")

@@ -27,9 +27,26 @@ h1, h2, h3, P {
     align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+    #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: 50%;
+    }
+}
+
 #hero img {
     width: 7vw;
 }
+@media screen and (max-width: 500px) {
+    #hero img {
+        width: 30vw;
+    }
+}
+
 
 #hero h1 {
     text-align: center;
@@ -38,6 +55,13 @@ h1, h2, h3, P {
     font-size: 3vw;
     color: #fff;
 }
+@media screen and (max-width: 500px) {
+    #hero h1 {
+        padding: 5% 10%;
+        font-size: 8vw;
+    }
+}
+
 
 #hero h2 {
     color: #fff;
@@ -46,6 +70,17 @@ h1, h2, h3, P {
     margin-bottom: 15%;
     letter-spacing: 0.07vw;
 }
+@media screen and (max-width: 500px) {
+    #hero h2 {
+        padding: 0 10%;
+        text-align: center;
+        line-height: 6vw;
+        font-size: 3.5vw;
+        margin-bottom: 50%;
+        letter-spacing: 0.2vw;
+    }
+}
+
 @keyframes bounce {
     0% {
         margin-top: 0;
@@ -59,11 +94,36 @@ h1, h2, h3, P {
         margin-top: 0;
     }
 }
+@media screen and (max-width: 500px) {
+    @keyframes bounce {
+        0% {
+            margin-top: 0;
+        }
+    
+        50% {
+            margin-top: 0;
+        }
+    
+        100% {
+            margin-top: 0;
+        }
+    }
+}
+
+
 #hero svg {
     color: #fff;
     width: 2vw;
     animation: bounce 1s infinite;
 }
+@media screen and (max-width: 500px) {
+    #hero svg {
+        color: #fff;
+        width: 10vw;
+        animation: bounce 1s infinite;
+    }
+}
+
 
 /* - - - about section syling - - - */
 #about {
@@ -72,6 +132,15 @@ h1, h2, h3, P {
     width: 100%;
     height: auto;
 }
+@media screen and (max-width: 500px) {
+    #about {
+        padding: 15% 10%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 #about h3 {
     text-transform: uppercase;
@@ -79,12 +148,29 @@ h1, h2, h3, P {
     margin-bottom: 2%;
     letter-spacing: 0.3vw;
 }
+@media screen and (max-width: 500px) {
+    #about h3 {
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.3vw;
+    }
+}
+
 
 #about p {
     font-size: 1vw;
     line-height: 2.5vw;
     letter-spacing: 0.05vw;
     font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+    #about p {
+        font-size: 3.5vw;
+        line-height: 7vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
 }
 
 /* - - - services section styling - - - */
@@ -98,6 +184,19 @@ h1, h2, h3, P {
     background-size: cover;
     background-attachment: scroll;
 }
+@media screen and (max-width: 500px) {
+    #services {
+        padding: 15% 10%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url("../assets/backgrounds/s_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
 
 #services h3 {
     color: #fff;
@@ -106,6 +205,16 @@ h1, h2, h3, P {
     margin-bottom: 2%;
     letter-spacing: 0.3vw;
 }
+@media screen and (max-width: 500px) {
+    #services h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.3vw;
+    }
+}
+
 
 #services p {
     color: #fff;
@@ -114,6 +223,15 @@ h1, h2, h3, P {
     letter-spacing: 0.05vw;
     font-weight: 500;
 }
+@media screen and (max-width: 500px) {
+    #services p {
+        font-size: 3.5vw;
+        line-height: 7vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
+}
+
 
 /* - - - what we do section styling - - - */
  #what-we-do {
@@ -122,6 +240,15 @@ h1, h2, h3, P {
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do {
+        padding: 15% 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 #what-we-do h3 {
     text-transform: uppercase;
@@ -129,6 +256,15 @@ h1, h2, h3, P {
     margin-bottom: 2%;
     letter-spacing: 0.3vw;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do h3 {
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.3vw;
+    }
+}
+
 
 #what-we-do .s-container {
     padding: 5% 0;
@@ -136,12 +272,32 @@ h1, h2, h3, P {
     align-items: flex-start;
     justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container {
+        padding: 5% 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 
 #what-we-do .s-container .service {
     position: relative;
     padding: 2% 0;
     width: 30%;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service {
+        position: relative;
+        padding: 2% 0;
+        width: 80%;
+        height: 60vw;
+    }
+}
+
 
 @keyframes appear {
     0% {
@@ -168,11 +324,24 @@ h1, h2, h3, P {
 #what-we-do .s-container .service .default img {
     width: 20%;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service .default img {
+        width: 30%;
+    }
+}
+
 
 #what-we-do .s-container .service .default h3 {
     font-size: 1.1vw;
     margin-top: 5%;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service .default h3 {
+        font-size: 4vw;
+        margin-top: 5%;
+    }
+}
+
 
 #what-we-do .s-container .service .description {
     width: 100%;
@@ -186,11 +355,32 @@ h1, h2, h3, P {
     cursor: pointer;
     display: none;
 }
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service .description {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        animation: appear 1s;
+        cursor: pointer;
+        display: none;
+    }
+}
 
 #what-we-do .s-container .service .description h3 {
     font-size: 1.1vw;
     margin-top: -15%;
     padding-bottom: 10%;
+}
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service .description h3 {
+        font-size: 4vw;
+        margin-top: 0;
+        padding-bottom: 10%;
+    }
 }
 
 #what-we-do .s-container .service .description p {
@@ -199,6 +389,15 @@ h1, h2, h3, P {
     line-height: 1.7vw;
     letter-spacing: 0.05vw;
     font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+    #what-we-do .s-container .service .description p {
+        margin-top: -10%;
+        font-size: 3.5vw;
+        line-height: 5vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
 }
 
 /* - - - portfolio section styling - - - */
@@ -210,6 +409,16 @@ h1, h2, h3, P {
     align-items: center;
     justify-content: flex-start;
 }
+@media screen and (max-width: 500px) {
+    #portfolio {
+        padding: 5% 10% 10% 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
 
 #portfolio h3 {
     text-transform: uppercase;
@@ -217,6 +426,15 @@ h1, h2, h3, P {
     margin-bottom: 2%;
     letter-spacing: 0.3vw;
 }
+@media screen and (max-width: 500px) {
+    #portfolio h3 {
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.3vw;
+    }
+}
+
 
 #portfolio .items {
     display: flex;
@@ -234,6 +452,17 @@ h1, h2, h3, P {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .items .item {
+        width: 100%;
+        margin: 5% 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 }
 
 #portfolio .items .item img {
@@ -256,8 +485,25 @@ h1, h2, h3, P {
     animation: appear 0.5s;
     display: none;
     backdrop-filter: blur(0.1vw);
-
 }
+@media screen and (max-width: 500px) {
+    #portfolio .items .item .text-box {
+        position: absolute;
+        z-index: -1;
+        background-clip: text;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        text-align: left;
+        animation: appear 0.5s;
+        display: none;
+        backdrop-filter: blur(0.5vw);
+    }
+}
+
 
 #portfolio .items .item .text-box p {
     text-align: left;
@@ -269,6 +515,19 @@ h1, h2, h3, P {
     height: 90%;
     width: 90%;
     border: solid 0.3vw #fff;
+}
+@media screen and (max-width: 500px) {
+    #portfolio .items .item .text-box p {
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 5vw;
+        padding: 10%;
+        height: 90%;
+        width: 90%;
+        border: solid 1vw #fff;
+    }
 }
 
 /* - - - contact us section styling - - - */
@@ -285,6 +544,21 @@ h1, h2, h3, P {
     background-size: cover;
     background-attachment: scroll;
 }
+@media screen and (max-width: 500px) {
+    #contact {
+        width: 100%;
+        padding: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("../assets/backgrounds/c_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
 
 #contact h3 {
     text-transform: uppercase;
@@ -293,11 +567,28 @@ h1, h2, h3, P {
     letter-spacing: 0.3vw;
     color: #fff;
 }
+@media screen and (max-width: 500px) {
+    #contact h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.3vw;
+    }
+}
+
 
 #contact form {
     width: 70%;
     animation-delay: 0.5s;
     animation: appear 0.5s;
+}
+@media screen and (max-width: 500px) {
+    #contact form {
+        width: 95%;
+        animation-delay: 0.5s;
+        animation: appear 0.5s;
+    }
 }
 
 #contact form .info {
@@ -305,6 +596,15 @@ h1, h2, h3, P {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+    #contact form .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 #contact form .info input {
@@ -317,6 +617,19 @@ h1, h2, h3, P {
     color: #fff;
     font-size: 0.9vw;
     margin: 5% 0;
+}
+@media screen and (max-width: 500px) {
+    #contact form .info input {
+        padding: 8%;
+        width: 100%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin: 5% 0;
+    }
 }
 
 #contact form .info input::placeholder {
@@ -335,6 +648,21 @@ h1, h2, h3, P {
     color: #fff;
     font-size: 0.9vw;
 }
+@media screen and (max-width: 500px) {
+    #contact form textarea {
+        width: 100%;
+        height: 40vw;
+        padding: 8%;
+        background-color: transparent;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 4%;
+    }
+}
 
 #contact form textarea::placeholder {
     color: rgb(197, 197, 197);
@@ -350,6 +678,19 @@ h1, h2, h3, P {
     font-size: 1vw;
     margin-top: 5%;
     cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    #contact form input[type=submit] {
+        padding: 4% 10%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 0.3vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 7%;
+        cursor: pointer;
+    }
 }
 
 #contact form input[type=submit]:hover {
@@ -373,6 +714,25 @@ h1, h2, h3, P {
     animation: appear 0.5s;
     display: none;
 }
+@media screen and (max-width: 500px) {
+    #contact .successful {
+        width: 90%;
+        padding: 10%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 5%;
+        cursor: pointer;
+        backdrop-filter: blur(0.2vw);
+        animation-delay: 0.5s;
+        animation: appear 0.5s;
+        display: none;
+    }
+}
+
 
 #contact .successful h3 {
     text-transform: uppercase;
@@ -381,6 +741,16 @@ h1, h2, h3, P {
     letter-spacing: 0.3vw;
     color: #fff;
 }
+@media screen and (max-width: 500px) {
+    #contact .successful h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 1vw;
+        color: #fff;
+    }
+}
+
 
 #contact .successful p {
     color: #fff;
@@ -389,6 +759,16 @@ h1, h2, h3, P {
     letter-spacing: 0.05vw;
     font-weight: 500;
 }
+@media screen and (max-width: 500px) {
+    #contact .successful p {
+        color: #fff;
+        font-size: 3vw;
+        line-height: 5vw;
+        letter-spacing: 0.1vw;
+        font-weight: 500;
+    }
+}
+
 
 #contact .successful .dismiss {
     padding: 2% 7%;
@@ -401,6 +781,20 @@ h1, h2, h3, P {
     margin-top: 5%;
     cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+    #contact .successful .dismiss {
+        padding: 5% 15%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 0.3vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+}
+
 
 #contact .successful .dismiss:hover {
     background-color: #fff;
@@ -417,17 +811,34 @@ footer {
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 500px) {
+    footer {
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 footer .icons {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 footer .icons img {
-    margin: 0 2%;
+    margin: 2%;
     width: 4vw;
-
+}
+@media screen and (max-width: 500px) {
+    footer .icons img {
+        margin: 3%;
+        width: 10vw;
+    }
 }
 
 footer .copyright {
@@ -436,6 +847,14 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 500px) {
+    footer .copyright {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 footer .copyright h3 {
     text-transform: uppercase;
@@ -443,9 +862,25 @@ footer .copyright h3 {
     margin-bottom: 2%;
     letter-spacing: 0.1vw;
 }
+@media screen and (max-width: 500px) {
+    footer .copyright h3 {
+        text-transform: uppercase;
+        font-size: 3.5vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.5vw;
+    }
+}
+
 
 footer .copyright p {
     font-size: 1vw;
     margin-bottom: 2%;
     letter-spacing: 0.05vw;
+}
+@media screen and (max-width: 500px) {
+    footer .copyright p {
+        font-size: 3.5vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.05vw;
+    }
 }
