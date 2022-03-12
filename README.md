@@ -16,6 +16,17 @@
 
 This is a simple landing page for a fictional studio. The goal for the project is to test and apply JavaScript animations, DOM manipulation and traversal, and form validation. Visit [live site]()
 
+## Behaviour Driven Development 
+From the description,this simple landing page is supposed to make it easy for the user to use, navigate, and contact the studio.
+* In the case that the user clicks on the services section icons, the descriptions of the corresponding service should be swapped in place of the icon and vice versa.
+* In the case that the user hovers over any of the items in the portfolio sectoin, additional description about the portfolio piece should appear as an overlay.
+* In the case that the user fills the contact form, they should get a response the their message has been sent and a "Thank you note" for good measure.
+* In the case that the user fails to fill any of the fields of the contact form, page should alert them on the missing fields.
+
+
+Tested Mailchimp Embed working:
+![Mailchimp Test Image](assets/mailchimp-integration.png)
+
 ## Usage
 
 ### Requirements
