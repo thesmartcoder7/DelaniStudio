@@ -14,7 +14,7 @@
 
 ## Description
 
-This is a simple landing page for a fictional studio. The goal for the project is to test and apply JavaScript animations, DOM manipulation and traversal, and form validation. Visit [live site]()
+This is a simple landing page for a fictional studio. The goal for the project is to test and apply JavaScript animations, DOM manipulation and traversal, and form validation. Visit [live site](https://thesmartcoder7.github.io/DelaniStudio/)
 
 ## Behaviour Driven Development 
 From the description,this simple landing page is supposed to make it easy for the user to use, navigate, and contact the studio.
