@@ -37,6 +37,17 @@ h1, h2, h3, P {
         background-position: 50%;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: 50%;
+    }
+}
+
 
 #hero img {
     width: 7vw;
@@ -44,6 +55,11 @@ h1, h2, h3, P {
 @media screen and (max-width: 500px) {
     #hero img {
         width: 30vw;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #hero img {
+        width: 15vw;
     }
 }
 
@@ -61,6 +77,13 @@ h1, h2, h3, P {
         font-size: 8vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #hero h1 {
+        padding: 5% 10%;
+        font-size: 5vw;
+    }
+}
+
 
 
 #hero h2 {
@@ -80,6 +103,17 @@ h1, h2, h3, P {
         letter-spacing: 0.2vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #hero h2 {
+        padding: 0 10%;
+        text-align: center;
+        line-height: 4vw;
+        font-size: 2vw;
+        margin-bottom: 15%;
+        letter-spacing: 0.2vw;
+    }
+}
+
 
 @keyframes bounce {
     0% {
@@ -109,6 +143,22 @@ h1, h2, h3, P {
         }
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    @keyframes bounce {
+        0% {
+            margin-top: 0;
+        }
+    
+        50% {
+            margin-top: 0;
+        }
+    
+        100% {
+            margin-top: 0;
+        }
+    }
+}
+
 
 
 #hero svg {
@@ -120,6 +170,13 @@ h1, h2, h3, P {
     #hero svg {
         color: #fff;
         width: 10vw;
+        animation: bounce 1s infinite;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #hero svg {
+        color: #fff;
+        width: 5vw;
         animation: bounce 1s infinite;
     }
 }
@@ -135,6 +192,14 @@ h1, h2, h3, P {
 @media screen and (max-width: 500px) {
     #about {
         padding: 15% 10%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #about {
+        padding: 7% 10%;
         text-align: center;
         width: 100%;
         height: auto;
@@ -156,6 +221,14 @@ h1, h2, h3, P {
         letter-spacing: 0.3vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #about h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
+    }
+}
 
 
 #about p {
@@ -168,6 +241,14 @@ h1, h2, h3, P {
     #about p {
         font-size: 3.5vw;
         line-height: 7vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #about p {
+        font-size: 2vw;
+        line-height: 4vw;
         letter-spacing: 0.05vw;
         font-weight: 500;
     }
@@ -196,6 +277,18 @@ h1, h2, h3, P {
         background-attachment: scroll;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #services {
+        padding: 7% 10%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url("../assets/backgrounds/s_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
 
 
 #services h3 {
@@ -214,6 +307,15 @@ h1, h2, h3, P {
         letter-spacing: 0.3vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #services h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
+    }
+}
+
 
 
 #services p {
@@ -227,6 +329,14 @@ h1, h2, h3, P {
     #services p {
         font-size: 3.5vw;
         line-height: 7vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #services p {
+        font-size: 2vw;
+        line-height: 4vw;
         letter-spacing: 0.05vw;
         font-weight: 500;
     }
@@ -248,6 +358,14 @@ h1, h2, h3, P {
         flex-direction: column;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do {
+        padding: 10% 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 #what-we-do h3 {
@@ -262,6 +380,14 @@ h1, h2, h3, P {
         font-size: 7vw;
         margin-bottom: 2%;
         letter-spacing: 0.3vw;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
     }
 }
 
@@ -282,6 +408,16 @@ h1, h2, h3, P {
         flex-wrap: wrap;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container {
+        padding: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
 
 
 #what-we-do .s-container .service {
@@ -297,6 +433,15 @@ h1, h2, h3, P {
         height: 60vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service {
+        position: relative;
+        padding: 2% 0;
+        width: 30%;
+        height: 10vw;
+    }
+}
+
 
 
 @keyframes appear {
@@ -329,6 +474,11 @@ h1, h2, h3, P {
         width: 30%;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service .default img {
+        width: 32%;
+    }
+}
 
 
 #what-we-do .s-container .service .default h3 {
@@ -338,6 +488,12 @@ h1, h2, h3, P {
 @media screen and (max-width: 500px) {
     #what-we-do .s-container .service .default h3 {
         font-size: 4vw;
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service .default h3 {
+        font-size: 2vw;
         margin-top: 5%;
     }
 }
@@ -369,6 +525,22 @@ h1, h2, h3, P {
         display: none;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service .description {
+        margin-top: -15%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        animation: appear 1s;
+        cursor: pointer;
+        display: none;
+    }
+}
+
 
 #what-we-do .s-container .service .description h3 {
     font-size: 1.1vw;
@@ -378,6 +550,13 @@ h1, h2, h3, P {
 @media screen and (max-width: 500px) {
     #what-we-do .s-container .service .description h3 {
         font-size: 4vw;
+        margin-top: 0;
+        padding-bottom: 10%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service .description h3 {
+        font-size: 2vw;
         margin-top: 0;
         padding-bottom: 10%;
     }
@@ -395,6 +574,15 @@ h1, h2, h3, P {
         margin-top: -10%;
         font-size: 3.5vw;
         line-height: 5vw;
+        letter-spacing: 0.05vw;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #what-we-do .s-container .service .description p {
+        margin-top: -10%;
+        font-size: 1.7vw;
+        line-height: 2.2vw;
         letter-spacing: 0.05vw;
         font-weight: 500;
     }
@@ -419,6 +607,17 @@ h1, h2, h3, P {
         justify-content: flex-start;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #portfolio {
+        padding: 5% 10% 10% 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
 
 #portfolio h3 {
     text-transform: uppercase;
@@ -434,6 +633,15 @@ h1, h2, h3, P {
         letter-spacing: 0.3vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #portfolio h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
+    }
+}
+
 
 
 #portfolio .items {
@@ -456,6 +664,17 @@ h1, h2, h3, P {
 @media screen and (max-width: 500px) {
     #portfolio .items .item {
         width: 100%;
+        margin: 5% 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #portfolio .items .item {
+        width: 45%;
         margin: 5% 0;
         position: relative;
         display: flex;
@@ -503,6 +722,23 @@ h1, h2, h3, P {
         backdrop-filter: blur(0.5vw);
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #portfolio .items .item .text-box {
+        position: absolute;
+        z-index: -1;
+        background-clip: text;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        text-align: left;
+        animation: appear 0.5s;
+        display: none;
+        backdrop-filter: blur(0.2vw);
+    }
+}
 
 
 #portfolio .items .item .text-box p {
@@ -527,6 +763,19 @@ h1, h2, h3, P {
         height: 90%;
         width: 90%;
         border: solid 1vw #fff;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #portfolio .items .item .text-box p {
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 3vw;
+        padding: 10%;
+        height: 90%;
+        width: 90%;
+        border: solid 0.5vw #fff;
     }
 }
 
@@ -559,6 +808,21 @@ h1, h2, h3, P {
         background-attachment: scroll;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact {
+        width: 100%;
+        padding: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("../assets/backgrounds/c_image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
 
 #contact h3 {
     text-transform: uppercase;
@@ -576,6 +840,14 @@ h1, h2, h3, P {
         letter-spacing: 0.3vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
+    }
+}
 
 
 #contact form {
@@ -590,6 +862,13 @@ h1, h2, h3, P {
         animation: appear 0.5s;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact form {
+        width: 80%;
+        animation-delay: 0.5s;
+        animation: appear 0.5s;
+    }
+}
 
 #contact form .info {
     width: 100%;
@@ -598,6 +877,15 @@ h1, h2, h3, P {
     justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
+    #contact form .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
     #contact form .info {
         width: 100%;
         display: flex;
@@ -628,6 +916,19 @@ h1, h2, h3, P {
         background-color: transparent;
         color: #fff;
         font-size: 3.5vw;
+        margin: 5% 0;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact form .info input {
+        padding: 4%;
+        width: 100%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.6vw;
         margin: 5% 0;
     }
 }
@@ -663,6 +964,21 @@ h1, h2, h3, P {
         margin-top: 4%;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact form textarea {
+        width: 100%;
+        height: 20vw;
+        padding: 4%;
+        background-color: transparent;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.6vw;
+        margin-top: 4%;
+    }
+}
 
 #contact form textarea::placeholder {
     color: rgb(197, 197, 197);
@@ -688,6 +1004,19 @@ h1, h2, h3, P {
         background-color: transparent;
         color: #fff;
         font-size: 3.5vw;
+        margin-top: 7%;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact form input[type=submit] {
+        padding: 3% 8%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 0.3vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.6vw;
         margin-top: 7%;
         cursor: pointer;
     }
@@ -732,6 +1061,24 @@ h1, h2, h3, P {
         display: none;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact .successful {
+        width: 80%;
+        padding: 10%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 1vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 3.5vw;
+        margin-top: 5%;
+        cursor: pointer;
+        backdrop-filter: blur(0.2vw);
+        animation-delay: 0.5s;
+        animation: appear 0.5s;
+        display: none;
+    }
+}
 
 
 #contact .successful h3 {
@@ -750,6 +1097,15 @@ h1, h2, h3, P {
         color: #fff;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact .successful h3 {
+        text-transform: uppercase;
+        font-size: 2.3vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.5vw;
+        color: #fff;
+    }
+}
 
 
 #contact .successful p {
@@ -763,6 +1119,15 @@ h1, h2, h3, P {
     #contact .successful p {
         color: #fff;
         font-size: 3vw;
+        line-height: 5vw;
+        letter-spacing: 0.1vw;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact .successful p {
+        color: #fff;
+        font-size: 2vw;
         line-height: 5vw;
         letter-spacing: 0.1vw;
         font-weight: 500;
@@ -794,6 +1159,20 @@ h1, h2, h3, P {
         cursor: pointer;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    #contact .successful .dismiss {
+        padding: 3% 10%;
+        outline: none;
+        border: 0.1vw solid #fff;
+        border-radius: 0.3vw;
+        background-color: transparent;
+        color: #fff;
+        font-size: 2vw;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+}
+
 
 
 #contact .successful .dismiss:hover {
@@ -821,13 +1200,36 @@ footer {
         justify-content: center;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer {
+        padding: 5%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
 footer .icons {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
+}
+@media screen and (max-width: 500px) {
+    footer .icons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 footer .icons img {
@@ -838,6 +1240,12 @@ footer .icons img {
     footer .icons img {
         margin: 3%;
         width: 10vw;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer .icons img {
+        margin: 3%;
+        width: 5vw;
     }
 }
 
@@ -855,6 +1263,15 @@ footer .copyright {
         align-items: center;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer .copyright {
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 footer .copyright h3 {
     text-transform: uppercase;
@@ -870,6 +1287,15 @@ footer .copyright h3 {
         letter-spacing: 0.5vw;
     }
 }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer .copyright h3 {
+        text-transform: uppercase;
+        font-size: 1.7vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.2vw;
+    }
+}
+
 
 
 footer .copyright p {
@@ -880,6 +1306,13 @@ footer .copyright p {
 @media screen and (max-width: 500px) {
     footer .copyright p {
         font-size: 3.5vw;
+        margin-bottom: 2%;
+        letter-spacing: 0.05vw;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    footer .copyright p {
+        font-size: 1.7vw;
         margin-bottom: 2%;
         letter-spacing: 0.05vw;
     }
