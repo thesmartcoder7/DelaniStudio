@@ -16,7 +16,7 @@ h1, h2, h3, P {
 /* - - - hero section styling - - - */
 #hero {
     width: 100%;
-    height: 100vh;
+    height: 57vw;
     padding-top: 10%;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/backgrounds/h_img.jpg");
     background-repeat: no-repeat;
@@ -187,6 +187,12 @@ h1, h2, h3, P {
     display: none;
 }
 
+#what-we-do .s-container .service .description h3 {
+    font-size: 1.1vw;
+    margin-top: -15%;
+    padding-bottom: 10%;
+}
+
 #what-we-do .s-container .service .description p {
     margin-top: -10%;
     font-size: 1vw;
@@ -347,6 +353,56 @@ h1, h2, h3, P {
     background-color: #fff;
     color: #3c3c3c;
 }
+
+#contact .successful {
+    width: 50%;
+    padding: 5%;
+    outline: none;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 5%;
+    cursor: pointer;
+    backdrop-filter: blur(0.2vw);
+    display: none;
+}
+
+#contact .successful h3 {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+    letter-spacing: 0.3vw;
+    color: #fff;
+}
+
+#contact .successful p {
+    color: #fff;
+    font-size: 1vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.05vw;
+    font-weight: 500;
+}
+
+#contact .successful .dismiss {
+    padding: 2% 7%;
+    outline: none;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#contact .successful .dismiss:hover {
+    background-color: #fff;
+    color: #3c3c3c;
+}
+
+
 
 /* - - - footer section styling - - - */
 footer {
