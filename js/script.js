@@ -54,7 +54,6 @@ for(i=0; i<image.length; i++){
         let hoverTextClass = e.target.lastElementChild.className.split(" ")[1]
         let backImage = e.target.firstElementChild
         let targetDivClass = e.target.className
-        let targetDiv = document.querySelectorAll(`.${targetDivClass}`)
         for(j=0; j<itemsArray.length; j++){
             if(hoverTextClass === itemsArray[j] ){
                 $(`.${hoverTextClass}`).css({
@@ -72,7 +71,6 @@ for(i=0; i<image.length; i++){
         let hoverTextClass = e.target.lastElementChild.className.split(" ")[1]
         let targetDivClass = e.target.className
         let backImage = e.target.firstElementChild
-        let targetDiv = document.querySelectorAll(`.${targetDivClass}`)
         for(j=0; j<itemsArray.length; j++){
             if(hoverTextClass === itemsArray[j] ){
                 $(`.${hoverTextClass}`).css({
