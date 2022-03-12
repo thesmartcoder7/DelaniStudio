@@ -2,7 +2,9 @@
 let timeline = new Date
 $(".current-year").text(timeline.getFullYear())
 
+
 /* - - - what we do onclick handler - - - */
+// image onclick function
 $(".default").click((e)=> {
     let siblingClassName = e.currentTarget.className.split(" ")[1]
     if(siblingClassName === "a"){
@@ -23,6 +25,7 @@ $(".default").click((e)=> {
     }
 })
 
+// description onclick function
 $(".description").click((e)=> {
     let siblingClassName = e.currentTarget.className.split(" ")[1]
     if(siblingClassName === "a"){
@@ -43,6 +46,7 @@ $(".description").click((e)=> {
     }
 })
 
+
 /* - - - portfolio hover handler - - - */
 let image = document.querySelectorAll(".item")
 let texBox = document.querySelectorAll(".text-box")
@@ -53,7 +57,6 @@ for(i=0; i<image.length; i++){
     image[i].addEventListener("mouseover", (e) => {
         let hoverTextClass = e.target.lastElementChild.className.split(" ")[1]
         let backImage = e.target.firstElementChild
-        let targetDivClass = e.target.className
         for(j=0; j<itemsArray.length; j++){
             if(hoverTextClass === itemsArray[j] ){
                 $(`.${hoverTextClass}`).css({
@@ -69,7 +72,6 @@ for(i=0; i<image.length; i++){
 for(i=0; i<image.length; i++){
     image[i].addEventListener("mouseout", (e) => {
         let hoverTextClass = e.target.lastElementChild.className.split(" ")[1]
-        let targetDivClass = e.target.className
         let backImage = e.target.firstElementChild
         for(j=0; j<itemsArray.length; j++){
             if(hoverTextClass === itemsArray[j] ){
@@ -81,3 +83,5 @@ for(i=0; i<image.length; i++){
         }   
     })
 }
+
+/* - - - form submission handler - - - */
